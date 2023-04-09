@@ -5,15 +5,12 @@ const EslintWebpackPlugin = require("eslint-webpack-plugin");
 const extensions = [".js", ".jsx"];
 
 module.exports = {
-  mode: "development",
-  // mode: process.env.NODE_ENV === "production" ? "production" : "development",
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   entry: "./src/index.jsx",
   output: {
     path: path.resolve(__dirname, "build"),
   },
   resolve: { extensions },
-  // target: ['web'],
-  
   devServer: {
     client: {
       overlay: false,
@@ -21,11 +18,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   enforce: 'pre',
-      //   use: ['source-map-loader'],
-      // },
       {
         test: /\.jsx?$/i,
         use: [
