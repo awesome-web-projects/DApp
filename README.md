@@ -37,6 +37,8 @@ $ truffle migrate --network development
 ...
 $ cd ../client
 $ npm start
+...
+# head over to the website being served from webpack.
 ```
 
 ### Metamask. 
