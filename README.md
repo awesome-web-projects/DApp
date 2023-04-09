@@ -42,7 +42,7 @@ $ npm start
 ### Metamask. 
 
 Login to Metamask, `accounts` > `Import Account`. 
-Paste any of the private keys (this will make sure that metamask uses a ganache available account)
+Paste any of the private keys (this will make sure that metamask uses a ganache available account). Also set that account as active account.
 
 ```sh
 # see in the terminal running ganache
